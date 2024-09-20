@@ -1,0 +1,113 @@
+.banner {
+    position: relative;
+    background-image: url('https://www.asce.org/-/media/asce-images-and-files/publications-and-news/source/images/sponsor-content/2022/dipra/dipra-pipe-stack-web-feat.jpg');
+    background-size: cover;
+    height: 300px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.banner-title {
+    position: relative;
+    color: white;
+    font-weight: bold;
+    z-index: 1;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+}
+
+.info-box {
+    position: absolute;
+    top: calc(60%);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    width: 80%;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+    height: 200px;
+    display: flex;
+    align-items: center;
+}
+
+@media (min-width: 400px) and (max-width: 500px) {
+    .info-box {
+        top: 45%;
+        width: 90%;
+        padding: 20px;
+    }
+}
+@media (min-width: 300px) and (max-width: 400px) {
+    .info-box {
+        top: 49%;
+        width: 90%;
+        padding: 20px;
+    }
+}
+@media (min-width: 768px) and (max-width: 1000px) {
+    .info-box {
+        top: 30%;
+        width: 80%;
+        padding: 20px;
+    }
+}
+@media (min-width: 500px) and (max-width: 768px) {
+    .info-box {
+        top: 40%;
+        width: 80%;
+        padding: 20px;
+    }
+}
+
+@media (min-width: 1000px) and (max-width: 1500px) {
+    .info-box {
+        top: 59%;
+        width: 90%;
+        padding: 40px;
+    }
+}
+
+@media (min-width: 1500px) {
+    .info-box {
+        top: 50%;
+        width: 90%;
+        padding: 40px;
+    }
+}
+
+
+.info-section {
+    background-color: rgba(230, 230, 230, 0.8);
+    padding: 140px 20px 40px;
+    text-align: center;
+    position: relative;
+    z-index: 1 !important;
+    position: relative;
+}
+
+.details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.details span {
+    margin: 0 10px;
+}
+
+@media (max-width: 768px) {
+    .details {
+        flex-direction: column;
+    }
+}

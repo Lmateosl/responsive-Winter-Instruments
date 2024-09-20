@@ -1,0 +1,20 @@
+<div class="gauges-container">
+    <div class="button-container">
+        <button class="gauge-button active">Pressure Gauges</button>
+        <button class="gauge-button">Pressure Transmitters</button>
+        <button class="gauge-button">Pressure Switches</button>
+        <button class="gauge-button">Diagraph Seals</button>
+    </div>
+</div>
+<div class="cards-container" style="margin-top: 20px;">
+    <div class="row">
+        <div class="col-6 col-md-3" *ngFor="let item of items">
+            <div class="card">
+                <img [src]="item.image" class="card-img-top" alt="Image for {{ item.name }}">
+                <div class="card-body">
+                    <h5 class="card-title" style="color: #C2132F;">{{ item.name }}</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,60 @@
+.gauges-container {
+    width: 100%;
+    margin-top: 20px;
+    background-color: transparent;
+}
+
+.button-container {
+    display: flex;
+    overflow: auto;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.gauge-button {
+    border: none;
+    border-bottom: 1px solid gray;
+    background-color: transparent;
+    color: gray;
+    padding: 10px;
+    cursor: pointer;
+    flex: 1;
+}
+
+.gauge-button:hover {
+    color: #C2132F;
+    border-bottom: 1px solid #C2132F;
+}
+
+.gauge-button.active {
+    color: #C2132F;
+    border-bottom: 1px solid #C2132F;
+}
+
+.cards-container {
+    width: 80%;
+    margin: auto;
+}
+
+.card {
+    background-color: transparent;
+    border: none;
+    transition: all 0.3s ease-in-out;
+    margin: 10px;
+}
+
+.card:hover {
+    background-color: white;
+    border: 1px solid black;
+}
+
+.card-img-top {
+    width: 100%;
+    height: auto; 
+}
+
+@media (max-width: 768px) {
+    .cards-container {
+        width: 90%;
+    }
+}

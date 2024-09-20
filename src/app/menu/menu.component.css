@@ -1,0 +1,152 @@
+#menuContainer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    background-color: #c2132f;
+    height: max-content;
+    justify-content: space-between;
+}
+
+#imgLogo {
+    margin: 30px auto;
+    display: block;
+    width: 35%;
+}
+
+@media (max-width: 599px) {
+    #imgLogo {
+        width: 75%;
+    }
+}
+
+#imgContainer {
+    width: 28%;
+}
+
+#navContainer {
+    width: 58%;
+    display: flex;
+    align-items: center;
+    background-color: #c2132f;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#navMenu {
+    background-color: #c2132f !important;
+}
+
+.container-fluid {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.dropdown-menu {
+    display: none;
+    background-color: #c2132f;
+    width: max-content;
+}
+
+.dropdown-item {
+    color: white !important;
+    font-weight: bold;
+    font-size: 11px;
+}
+
+.nav-link:hover + .dropdown-menu {
+    display: block;
+}
+
+.nav-link {
+    color: white;
+    font-weight: bold;
+}
+
+.nav-link i {
+    margin-right: 8px;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+.nav-item.dropdown .dropdown-toggle {
+    text-decoration: underline;
+    font-size: 11px;
+    text-align: left !important;
+}
+
+@media (max-width: 599px) {
+    .nav-item.dropdown .dropdown-toggle {
+        text-align: right !important;
+    }
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    border-radius:0px !important;
+}
+
+@media (max-width: 1000px) {
+    .dropdown:hover .dropdown-menu{
+        border: none;
+    }
+}
+
+.dropdown-menu a:hover {
+    color: black !important;
+    background-color: transparent !important;
+}
+
+.nav-item:nth-child(2) .dropdown-toggle {
+    text-decoration: none;
+}
+
+form.w-70 {
+    width: 35%;
+}
+
+@media (max-width: 599px) {
+    #formSearch {
+        display: none !important;
+    }
+}
+
+.btn.btn-outline-success {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+}
+
+.btn.btn-outline-success:hover {
+    background-color: white;
+    color: #c2132f;
+}
+
+#navMenu {
+    background-color: #c2132f !important;
+}
+
+.line-divider {
+    border-left: 2px solid white;
+    height: 100%;
+}
+
+@media (max-width: 992px) {
+    .line-divider {
+        display: none;
+    }
+}
+
+.custom-dropdown-left {
+    right: 0;
+    left: auto;
+}
+
+.dropSecondItem {
+    text-decoration: none !important;
+    font-size: 13px !important;
+    text-align: left !important;
+}
